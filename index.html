@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dự án Web heheheh</title>
+
+<style>
+/* ===== CÀI ĐẶT CHUNG ===== */
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    background:#f2f4f8;
+}
+
+.init{
+    margin:20px;
+    padding:15px;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADER ===== */
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+/* =====LOGO===== */
+.logo{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#e0f7fa;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:0.4s;
+}
+
+.logo:hover{
+    transform:rotate(6deg) scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.45);
+}
+
+.logo img{enjin
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    border-radius:50%;
+}
+.title{
+    flex:1;
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    color:blueviolet;
+}
+/* ===== MENU ===== */
+nav{
+    background:darkcyan;
+    margin:0 20px 20px;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    border-radius:10px;
+}
+
+nav a, .dropbtn{
+    color:red;
+    padding:10px 16px;
+    text-decoration:none;
+    border-radius:6px;
+    font-size:16px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav a:hover, .dropbtn:hover{
+    background:yellow;
+    color:red;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown{
+    position:relative;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    top:42px;
+    left:0;
+    background:lightskyblue;
+    min-width:160px;
+    border-radius:8px;
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a{
+    display:block;
+    padding:10px;
+    color:blue;
+}
+
+.dropdown-content a:hover{
+    background:yellow;
+    color:red;
+}
+
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+
+/* ===== MAIN ===== */
+.main{
+    margin:20px;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+}
+
+.box{
+    background:lightpink;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.box h1{
+    color:blue;
+    text-align:center;
+}
+
+.box p{
+    text-align:justify;
+    line-height:1.6;
+}
+
+/* ===== ẢNH ===== */
+.img-center{
+    width:70%;
+    margin:10px auto;
+    border-radius:8px;
+}
+
+.img-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:10px;
+    margin:10px 0;
+}
+
+.img-grid img{
+    width:100%;
+    border-radius:8px;
+}
+
+/* ===== MEDIA ===== */
+audio, video{
+    margin:10px auto;
+    display:block;
+}
+
+video{
+    width:100%;
+    max-width:500px;
+}
+
+/* ===== FORM ===== */
+.form-area{
+    background:lightgreen;
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+.footer div{
+    margin:6px 0;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div class="init header">
+    <div class="logo">
+        <img src="jpg.png" alt="Logo">
+    </div>
+    <div class="title">VIỆT NAM – LỊCH SỬ VÀ TRUYỀN THỐNG DÂN TỘC</div>
+</div>
+
+<!-- MENU -->
+<nav>
+    <a href="https://thptnguyenbinhkhiem.gialai.edu.vn/" target="_blank">Trang chủ</a>
+    <a href="#">Giới thiệu</a>
+
+    <div class="dropdown">
+        <button class="dropbtn">Lựa chọn</button>
+        <div class="dropdown-content">
+            <a href="#">Giới thiệu</a>
+            <a href="#">Hình ảnh tiêu biểu</a>
+            <a href="#">Âm nhạc</a>
+            <a href="#">Video giới thiệu</a>
+        </div>
+    </div>
+
+    <a href="#">Liên hệ</a>
+    <a href="thanhvien.html" target="_blank">Về chúng tôi</a>
+    <a href="https://ngoccs.edu.vn" target="_blank">Người hướng dẫn</a>
+</nav>
+
+<!-- MAIN -->
+<div class="main">
+
+    <div class="box">
+        <h1>GIỚI THIỆU CHUNG</h1>
+        <img src="vn.jpg" class="img-center">
+        <p>
+            Việt Nam là mảnh đất thân thương hình chữ S, nơi hội tụ của lịch sử hào hùng, văn hóa lâu đời và con người giàu lòng nhân ái. Trải qua hàng nghìn năm dựng nước và giữ nước, dân tộc Việt Nam đã viết nên những trang sử oanh liệt bằng ý chí kiên cường, tinh thần đoàn kết và khát vọng tự do, độc lập. Thiên nhiên Việt Nam mang vẻ đẹp vừa hùng vĩ vừa nên thơ, từ núi rừng trập trùng, những cánh đồng lúa chín vàng đến bờ biển dài xanh thẳm ôm trọn đất trời. Không chỉ đẹp bởi cảnh sắc, Việt Nam còn đẹp bởi con người – những con người cần cù, giản dị, giàu nghĩa tình và luôn hướng về cội nguồn. Ngày nay, trong nhịp sống hiện đại và quá trình hội nhập quốc tế, Việt Nam vẫn bền bỉ gìn giữ những giá trị truyền thống, đồng thời không ngừng vươn lên, khẳng định vị thế của mình trên bản đồ thế giới. Việt Nam không chỉ là một quốc gia, mà còn là niềm tự hào, là nơi chốn thiêng liêng trong trái tim mỗi người con đất Việt.
+        </p>
+    </div>
+
+    <div class="box">
+        <h1>HÌNH ẢNH TIÊU BIỂU</h1>
+        <div class="img-grid">
+            <img src="denhung.jpg">
+            <img src="badinh.jpg">
+            <img src="thanglong.jpg">
+            <img src="cotco.jpg">
+        </div>
+        <p>
+            Mỗi địa danh lịch sử là một biểu tượng thiêng liêng ghi dấu những chiến công oanh liệt của dân tộc Việt Nam.
+        </p>
+    </div>
+
+    <div class="box">
+        <h1>ÂM NHẠC TRUYỀN THỐNG</h1>
+        <p> Kiếp sau vẫn là người Việt Nam </p>
+        <audio controls>
+            <source src="nhac.mp3" type="audio/mpeg">
+        </audio>
+        <p>
+            Bài “Kiếp sau vẫn là người Việt Nam” thể hiện lòng yêu nước sâu sắc và niềm tự hào về dân tộc Việt Nam. Qua đó, tác giả khẳng định dù ở bất kỳ hoàn cảnh nào, được làm người Việt Nam vẫn là điều thiêng liêng và đáng trân trọng. Bài viết còn nhắc nhở mỗi người cần gìn giữ truyền thống, trân trọng hòa bình và có trách nhiệm với quê hương, đất nước.
+        </p>
+    </div>
+
+    <div class="box">
+        <h1>VIDEO GIỚI THIỆU</h1>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+<!-- FORM -->
+<div class="init form-area">
+    <h2>📩 FORM LIÊN HỆ</h2>
+    <form>
+        <h2 style="color:#0d47a1; text-align:center;">
+    📋 Góp ý cho dự án “Việt Nam – Lịch sử & Truyền thống”
+</h2>
+
+<form style="max-width:600px; margin:auto; font-size:18px;">
+
+    <!-- Họ và tên -->
+    <label>Họ và tên:</label><br>
+    <input type="text" placeholder="Nhập họ và tên"
+           style="width:100%; padding:10px; margin:8px 0 15px;
+           border-radius:8px; border:1px solid #ccc;"><br>
+
+    <!-- Lớp -->
+    <label>Lớp:</label><br>
+    <input type="text" placeholder="Ví dụ: 12A, 11B"
+           style="width:100%; padding:10px; margin:8px 0 15px;
+           border-radius:8px; border:1px solid #ccc;"><br>
+
+    <!-- Email -->
+    <label>Email:</label><br>
+    <input type="email" placeholder="example@gmail.com"
+           style="width:100%; padding:10px; margin:8px 0 15px;
+           border-radius:8px; border:1px solid #ccc;"><br>
+
+    <!-- Góp ý -->
+    <label>Cảm nhận / Góp ý:</label><br>
+    <textarea rows="5" placeholder="Nhập cảm nhận hoặc góp ý của bạn..."
+              style="width:100%; padding:10px; margin:8px 0 15px;
+              border-radius:8px; border:1px solid #ccc;"></textarea><br>
+
+    <!-- Nút gửi -->
+    <button type="submit"
+            style="background:seagreen; color:white;
+            padding:12px 20px; border:none;
+            border-radius:8px; font-size:18px;
+            cursor:pointer;">
+        👉 Gửi góp ý
+    </button>
+
+</form>
+
+<p style="text-align:center; font-style:italic; margin-top:15px;">
+    Mọi ý kiến đóng góp của bạn sẽ giúp nhóm hoàn thiện dự án tốt hơn.<br>
+    Xin chân thành cảm ơn!
+</p>
+
+    </form>
+</div>
+
+<!-- FOOTER -->
+<div class="init footer">
+    <div style="color:red">©️ NHÓM / nguyentrongnhan </div>
+    <div style="color:blue">🏫 Lớp 12A<sup>3</sup> – THPT NBK – Gia Lai</div>
+    <div style="color:violet">📧 Email: trongnhann471@gmail.com</div>
+</div>
+
+</body>
+</html>
